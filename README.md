@@ -7,6 +7,7 @@ line.
 
 - [Installation](#installation)
 - [Usage](#usage)
+- [Contributing](#contributing)
 
 ## Installation
 

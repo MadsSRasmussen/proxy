@@ -50,13 +50,13 @@ project.
 
 ### Using the proxy as a dependency in a project
 
-Alternatively, a server can be setup by importing the `startServer` function
-from the package root:
+Alternatively, a server can be setup by importing the `startProxyServer`
+function from the package root:
 
 ```ts
-import { startServer } from "@msrass/proxy";
+import { startProxyServer } from "@msrass/proxy";
 
-startServer({
+startProxyServer({
     target: "https://pokeapi.co/api/v2/",
     headers: {
         "Content-Type": "application/json",
@@ -68,9 +68,8 @@ startServer({
 
 ## Contributing
 
-The package uses the `Deno.test` test-runner.
-
-To run the tests, simply run:
+The package uses the `Deno.test` test-runner. The following command is used for
+testing:
 
 ```bash
 deno task test

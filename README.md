@@ -23,7 +23,7 @@ If you intend to use it as a depency in your project, it can be added directly
 with:
 
 ```ts
-import { startServer } from "jsr:@msrass/proxy";
+import { startProxyServer } from "jsr:@msrass/proxy";
 ```
 
 Or using the `Deno add` command:

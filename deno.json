@@ -1,0 +1,23 @@
+{
+    "name": "@msrass/proxy",
+    "version": "0.1.0",
+    "exports": {
+        ".": "./src/index.ts"
+    },
+    "publish": {
+        "include": ["README.md", "tests/", "src/"]
+    },
+    "tasks": {
+        "build": "deno compile --allow-net --output bin/proxy-server main.ts",
+        "test": "deno test --allow-net"
+    },
+    "imports": {
+        "@std/cli": "jsr:@std/cli@^1.0.15"
+    },
+    "license": "MIT",
+    "fmt": {
+        "useTabs": false,
+        "indentWidth": 4,
+        "semiColons": true
+    }
+}
